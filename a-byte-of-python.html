@@ -1,47 +1,70 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-        <meta charset="utf-8" />
         <title>Краткий отзыв о книге A Byte of Python</title>
-        <link rel="stylesheet" href="http://fromer.ru/theme/css/main.css" />
+        <meta charset="utf-8" />
 
-        <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+
+        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+        <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="http://fromer.ru/theme/gumby.css" />
+        <link rel="stylesheet" type="text/css" href="http://fromer.ru/theme/style.css" />
+        <link rel="stylesheet" type="text/css" href="http://fromer.ru/theme/pygment.css" />
+
+        <script src="http://fromer.ru/theme/js/libs/modernizr-2.6.2.min.js"></script>
+
+
+
+
 </head>
 
 <body id="index" class="home">
-<a href="https://github.com/Fr0mer">
-<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
-</a>
-        <header id="banner" class="body">
-                <h1><a href="http://fromer.ru/">My Blog </a></h1>
-                <nav><ul>
-                    <li><a href="http://fromer.ru/pages/about.html">Обо мне</a></li>
-                    <li><a href="http://fromer.ru/category/adminskoe.html">Админское</a></li>
-                    <li class="active"><a href="http://fromer.ru/category/knigi.html">Книги</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
+
+
+    <div class="container">
+
+        <div class="row">
+
+          <header id="banner" class="body">
+                  <!--<h1><a href="http://fromer.ru/">My Blog <strong></strong></a></h1>-->
+                  <a href="http://shilov.link/" title="Shilov.link" rel="home">
+        <img class="header-image" src="http://shilov.link/images/logo.png" alt="Shilov.link" title="Shilov.link" />
+      </a>
+          </header><!-- /#banner -->
+
+            <div id="navigation" class="navbar row">
+              <a href="#" gumby-trigger="#navigation &gt; ul" class="toggle"><i class="icon-menu"></i></a>
+             
+              <ul class="columns">
+                <li><a href="http://fromer.ru/">Блог</a></li>
+
+
+              </ul>
+            </div>
+
 <section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="http://fromer.ru/a-byte-of-python.html" rel="bookmark"
-           title="Permalink to Краткий отзыв о книге A Byte of Python">Краткий отзыв о книге A Byte of Python</a></h1>
-    </header>
 
-    <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2016-04-21T13:49:00+03:00">
-                Published: Thu 21 April 2016
-        </abbr>
+   <div class="row">
+        <div class="eleven columns">
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://fromer.ru/author/fr0mer.html">Fr0mer</a>
-        </address>
-<p>In <a href="http://fromer.ru/category/knigi.html">Книги</a>.</p>
-<p>tags: <a href="http://fromer.ru/tag/python.html">Python</a> <a href="http://fromer.ru/tag/obzor.html">Обзор</a> </p>
-</footer><!-- /.post-info -->      <p>В связи с профессиональной переподготовкой прочел книгу «A Byte of Python». Новичкам часто советуют начинать с нее в ответ на вопрос «Как изучать Python?». Книга неплоха, и я решил написать на нее небольшой обзор.</p>
+
+            <header>
+              <h2 class="entry-title">
+                <a href="http://fromer.ru/a-byte-of-python.html" rel="bookmark"
+                   title="Permalink to Краткий отзыв о книге A Byte of Python">Краткий отзыв о книге A Byte of Python</a></h2>
+           
+            </header>
+            <footer class="post-info">
+              <abbr class="published" title="2016-04-21T13:49:00+03:00">
+                Thu 21 April 2016
+              </abbr>
+              <address class="vcard author">By 
+                <a class="url fn" href="http://fromer.ru/author/fr0mer.html"> Fr0mer</a>
+              </address>
+            </footer><!-- /.post-info -->
+            <div class="entry-content">
+              <p>В связи с профессиональной переподготовкой прочел книгу «A Byte of Python». Новичкам часто советуют начинать с нее в ответ на вопрос «Как изучать Python?». Книга неплоха, и я решил написать на нее небольшой обзор.</p>
 <p><img alt="Swaroop Chitlur" src="http://fromer.ru/images/swaroop.jpg" style="float:left; margin: 10px 10px">
 Автор книги - <a href="http://www.swaroopch.com/">Swaroop Chitlur</a>, блогер, автор книг, программист из Индии, работал в Yahoo!, в Adobe входил в команду продукта Flex . В данный момент трудится  на фирму в Сан-Франциско, занимающейся автомобильным адаптером-диагностом-трекером. Он написал еще "A Byte of VIM" (техническому писателю фантазия, видимо, не очень нужна), книгу об редакторе Vim версии 7.</p>
 
@@ -63,37 +86,118 @@
 <p><strong>Ссылки на книгу:</strong></p>
 <p><a href="https://wombat.org.ua/AByteOfPython/">Русский перевод книги версии 2.0</a></p>
 <p><a href="http://python.swaroopch.com/index.html">Тем кто дружен с английским, `оригинал книги</a>, на момент публикации статьи версия книги 4.0</p>
-    </div><!-- /.entry-content -->
+            </div><!-- /.entry-content -->
 
-  </article>
+
+        </div><!-- /.eleven.columns -->
+
+<div class="three columns">
+
+<h4>Страницы</h4>
+
+ <ul>
+  </ul>
+
+<h4>Категории</h4>
+<ul class="blank">
+		<li><a href="http://fromer.ru/category/adminskoe.html">Админское</a></li>
+		<li><a href="http://fromer.ru/category/knigi.html">Книги</a></li>
+</ul>
+
+
+<h4>Метки</h4>
+    <ul class="tagcloud">
+            <li class="tag-4">
+                <a href="http://fromer.ru/tag/rhel.html">
+                RHEL
+                </a>
+            </li>
+            <li class="tag-4">
+                <a href="http://fromer.ru/tag/python.html">
+                Python
+                </a>
+            </li>
+            <li class="tag-4">
+                <a href="http://fromer.ru/tag/raid.html">
+                Raid
+                </a>
+            </li>
+            <li class="tag-1">
+                <a href="http://fromer.ru/tag/obzor.html">
+                Обзор
+                </a>
+            </li>
+            <li class="tag-4">
+                <a href="http://fromer.ru/tag/linux.html">
+                Linux
+                </a>
+            </li>
+            <li class="tag-4">
+                <a href="http://fromer.ru/tag/vmware.html">
+                Vmware
+                </a>
+            </li>
+            <li class="tag-4">
+                <a href="http://fromer.ru/tag/pm.html">
+                PM
+                </a>
+            </li>
+    </ul>
+
+<nav class="widget">
+  <h4>Social</h4>
+  <ul class="blank">
+    <li><a href="#">You can add links in your config file</a></li>
+    <li><a href="#">Another social link</a></li>
+  </ul>
+</nav>
+
+</div> </div><!-- /.row -->
+
+
 </section>
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+       </div><!-- /.row -->
+    </div><!-- /.container -->
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+       <div class="container.nopad bg">
 
+    
+        <footer id="credits" class="row">
+          <div class="seven columns left-center">
+
+                   <address id="about" class="vcard body">
+                    Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                    which takes great advantage of <a href="http://python.org">Python</a>.
+                    <br />
+                    Based on the <a target="_blank" href="http://gumbyframework.com">Gumby Framework</a>
+                    </address>
+          </div>
+
+
+          <div class="seven columns">
+            <div class="row">
+              <ul class="socbtns">
+
+                <li><div class="btn primary"><a href="https://github.com/Fr0mer" target="_blank">Github</a></div></li>
+
+                <li><div class="btn twitter"><a href="https://twitter.com/Fr0mer" target="_blank">Twitter</a></div></li>
+
+                <li><div class="btn facebook"><a href="https://www.facebook.com/fr0mer" target="_blank">Facebook</a></div></li>
+
+
+              </ul>
+            </div>
+          </div>
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter39769515 = new Ya.Metrika({ id:39769515, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/39769515" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+        </footer>
+
+    </div>
+
+
+  <script src="http://fromer.ru/theme/js/libs/jquery-1.9.1.min.js"></script>
+  <script src="http://fromer.ru/theme/js/libs/gumby.min.js"></script>
+  <script src="http://fromer.ru/theme/js/plugins.js"></script>
 </body>
 </html>

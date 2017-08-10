@@ -1,120 +1,221 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+        <title>My Blog</title>
         <meta charset="utf-8" />
-        <title>My Blog - Админское</title>
-        <link rel="stylesheet" href="http://fromer.ru/theme/css/main.css" />
 
-        <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+
+        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+        <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="http://fromer.ru/theme/gumby.css" />
+        <link rel="stylesheet" type="text/css" href="http://fromer.ru/theme/style.css" />
+        <link rel="stylesheet" type="text/css" href="http://fromer.ru/theme/pygment.css" />
+
+        <script src="http://fromer.ru/theme/js/libs/modernizr-2.6.2.min.js"></script>
+
+
+
+
 </head>
 
 <body id="index" class="home">
-<a href="https://github.com/Fr0mer">
-<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" />
-</a>
-        <header id="banner" class="body">
-                <h1><a href="http://fromer.ru/">My Blog </a></h1>
-                <nav><ul>
-                    <li><a href="http://fromer.ru/pages/about.html">Обо мне</a></li>
-                    <li class="active"><a href="http://fromer.ru/category/adminskoe.html">Админское</a></li>
-                    <li><a href="http://fromer.ru/category/knigi.html">Книги</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="http://fromer.ru/vsphere.html">Заметки о виртуализации</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2015-12-12T12:43:00+03:00">
-                Published: Sat 12 December 2015
-        </abbr>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://fromer.ru/author/fr0mer.html">Fr0mer</a>
-        </address>
-<p>In <a href="http://fromer.ru/category/adminskoe.html">Админское</a>.</p>
-<p>tags: <a href="http://fromer.ru/tag/vmware.html">Vmware</a> </p>
-</footer><!-- /.post-info --><p><img alt="Vmware Logo" src="http://fromer.ru/images/vmware.png"></p>
+    <div class="container">
+
+        <div class="row">
+
+          <header id="banner" class="body">
+                  <!--<h1><a href="http://fromer.ru/">My Blog <strong></strong></a></h1>-->
+                  <a href="http://shilov.link/" title="Shilov.link" rel="home">
+        <img class="header-image" src="http://shilov.link/images/logo.png" alt="Shilov.link" title="Shilov.link" />
+      </a>
+          </header><!-- /#banner -->
+
+            <div id="navigation" class="navbar row">
+              <a href="#" gumby-trigger="#navigation &gt; ul" class="toggle"><i class="icon-menu"></i></a>
+             
+              <ul class="columns">
+                <li><a href="http://fromer.ru/">Блог</a></li>
+
+
+              </ul>
+            </div>
+
+<section id="content">
+<h2>Articles in the Админское category</h2>
+
+
+   <div class="row">
+
+
+        <div class="eleven columns">
+                 <ol id="post-list">
+                        <li><article class="hentry">
+                                <header> <h2 class="entry-title"><a href="http://fromer.ru/vsphere.html" rel="bookmark" title="Permalink to Заметки о виртуализации">Заметки о виртуализации</a></h2> </header>
+                                <footer class="post-info">
+                                    <abbr class="published" title="2015-12-12T12:43:00+03:00"> Sat 12 December 2015 </abbr>
+                                    <address class="vcard author">Автор 
+                                    <a class="url fn" href="http://fromer.ru/author/fr0mer.html"> Fr0mer</a>
+                                    </address>
+                                </footer><!-- /.post-info -->
+                                <div class="entry-content"> <p><img alt="Vmware Logo" src="http://fromer.ru/images/vmware.png"></p>
 <p>Волею случая (а точнее по желанию вышестоящего начальства) перепал нам в отдел кластер виртуализации. Мы конечно же обрадовались, выбросили все свои древние сервера и давай безудержно переносить инфраструктуру на платформу виртуализации, пританцовывая джигу и напевая «Ah, du lieber Augustin…»
 На самом деле нет — мы неохотно и осторожно — ну и консерваторы же эти сисадмины — стали пробовать что же это за зверь такой — виртуализация в отдельно взятой госконторе. По прошествии двух лет 70% нашей инфраструктуры сервис за сервисом переехали в кластер Vmware Vsphere и «волосы мои стали мягкими и шелковистыми». Хотелось бы поделиться плюсами и минусами виртуализации, ведь мне так не хватало этой статьи, когда я писал отчет по внедрению вышестоящим благодетелям, а кому-то она сохранит время. Можно было бы надеяться, что она подтолкнет к переходу много хороших админов, но давайте будем реалистами — порядок цен для создания безотказного кластера такой, что кому это по карману — у тех он давно есть, остальным же приходится только завидовать.</p>
+ </div><!-- /.entry-content -->
+
+                                <div class="medium primary btn"><a href="http://fromer.ru/vsphere.html" rel="bookmark" title="Permalink to Заметки о виртуализации">Далее... <i class="icon-arrow-right"></i></a></div>
 
 
-<p>Итак <strong>плюсы</strong>:</p>
-<p>1.Простота и удобство администрирования виртуализированных сервисов и серверных приложений, которое достигается наличием инструментов создания новых гостевых операционных систем:</p>
-<p>-Миграция существующих серверов;</p>
-<p>-Разворачивание целевой системы из предварительно созданного шаблона;</p>
-<p>-Конвертирование из существующей резервной копии, созданной сторонними средствами;</p>
-<p>-Возможность сохранения состояния виртуальной машины позволяет быстро вернуться к точке до внесения изменений в систему. Весь зоопарк наших операционок — это каждая из семейства Windows Server от 2000 до 2012, а также большое количество сервисов на Linux (RHEL, Oracle Linux, etc..) беспроблемно переехали в кластер, не потеряв ни грана производительности. Созание новых гостевых машин производится двумя щелчками мыши.</p>
-<p>2.Возможность распределения вычислительных ресурсов кластера виртуализации между целевыми системами, таких как количество процессоров на виртуальную машину и количества ядер в них, количество выделяемой оперативной памяти и дисковое пространство разделов виртуальной машины. Следует отметить, операция добавления (или уменьшения) выделяемых виртуальной машине вычислительных ресурсов может производиться в оперативном порядке и занимает непродолжительное время.</p>
-<p>3.Наличие инструментов централизованного мониторинга состояния целевых систем, самого кластера виртуализации и распределяемых ресурсов, а также возможность создания отчетов мониторинга с диапазоном от одного дня до года.</p>
-<p>4.Инструменты кластера виртуализации обеспечивают централизованное создание резервных копий сервисов, баз данных и файлов виртуализированных серверов.</p>
-<p>5.Архитектура кластера виртуализации обеспечивает многократное резервирование программно-аппаратных ресурсов. Механизм автоматической балансировки вычислительных ресурсов внутри кластера виртуализации (Distributed Resource Scheduler – DRS) обеспечивает условия для создания не только отказоустойчивой, но и максимально производительной системы. Сочетание четырехкратного запаса аппаратных ресурсов и DRS создает очень надежную систему.</p>
-<p>6.Отмечено улучшение производительности виртуализированных сервисов, связанных с увеличением скорости доступа к дисковому пространству и оперативной памяти.</p>
-<p>7.Снижение энергопотребления и тепловыделения — еще бы, ведь три стойки доисторических серваков были заменены стойкой с блэйдами и дисковыми полками.</p>
-<p>А также <strong>минусы</strong>:</p>
-<p>1.Повышения требований к серверам, как по производительности, так и по надежности.</p>
-<p>2.Возможная единая точка отказа.</p>
-<p><strong><em>Резюме:</em></strong> Виртуализация — отличная штука для продакшн-сервисов, где нужна быстрота деплоя, многочисленные эксперименты и удобство администрирования, однако критичные маломеняющиеся штуки все-таки стоит держать в железе (разумеется, в двойном экземпляре).</p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="http://fromer.ru/rhel-5-5-i-fakeraid.html" rel="bookmark"
-                           title="Permalink to RHEL 5.5 и fakeRAID">RHEL 5.5 и fakeRAID</a></h1>
-                </header>
+                                <div class="row tag-row">
+                                        <span>Метки: </span>
+                                            <a class="danger label" href="http://fromer.ru/tag/vmware.html">Vmware</a>
+                                </div>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2012-12-17T12:48:00+04:00">
-                Published: Mon 17 December 2012
-        </abbr>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="http://fromer.ru/author/fr0mer.html">fr0mer</a>
-        </address>
-<p>In <a href="http://fromer.ru/category/adminskoe.html">Админское</a>.</p>
-<p>tags: <a href="http://fromer.ru/tag/linux.html">Linux</a> <a href="http://fromer.ru/tag/raid.html">Raid</a> <a href="http://fromer.ru/tag/rhel.html">RHEL</a> </p>
-</footer><!-- /.post-info -->                <p><img alt="Rhel_sketch" src="http://fromer.ru/images/fakeraid.png">
+
+                        </article></li>
+                        <li><article class="hentry">
+                                <header> <h2 class="entry-title"><a href="http://fromer.ru/rhel-5-5-i-fakeraid.html" rel="bookmark" title="Permalink to RHEL 5.5 и fakeRAID">RHEL 5.5 и fakeRAID</a></h2> </header>
+                                <footer class="post-info">
+                                    <abbr class="published" title="2012-12-17T12:48:00+04:00"> Mon 17 December 2012 </abbr>
+                                    <address class="vcard author">Автор 
+                                    <a class="url fn" href="http://fromer.ru/author/fr0mer.html"> fr0mer</a>
+                                    </address>
+                                </footer><!-- /.post-info -->
+                                <div class="entry-content"> <p><img alt="Rhel_sketch" src="http://fromer.ru/images/fakeraid.png">
  Вдруг кому пригодится. Появилась служебная надобность установить Enterprise RedHat Linux 5.5 на один из серверов. В этот погожий последневесенний денек ничто не предвещало беды, как вдруг…</p>
+ </div><!-- /.entry-content -->
 
-                <a class="readmore" href="http://fromer.ru/rhel-5-5-i-fakeraid.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
+                                <div class="medium primary btn"><a href="http://fromer.ru/rhel-5-5-i-fakeraid.html" rel="bookmark" title="Permalink to RHEL 5.5 и fakeRAID">Далее... <i class="icon-arrow-right"></i></a></div>
+
+
+
+                                <div class="row tag-row">
+                                        <span>Метки: </span>
+                                            <a class="danger label" href="http://fromer.ru/tag/linux.html">Linux</a>
+                                            <a class="danger label" href="http://fromer.ru/tag/raid.html">Raid</a>
+                                            <a class="danger label" href="http://fromer.ru/tag/rhel.html">RHEL</a>
+                                </div>
+
+
+
+                        </article></li>
                 </ol><!-- /#posts-list -->
-                </section><!-- /#content -->
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
+        </div><!-- /.eleven.columns -->
+        
+<div class="three columns">
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+<h4>Страницы</h4>
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+ <ul>
+  </ul>
 
+<h4>Категории</h4>
+<ul class="blank">
+		<li><a href="http://fromer.ru/category/adminskoe.html">Админское</a></li>
+		<li><a href="http://fromer.ru/category/knigi.html">Книги</a></li>
+</ul>
+
+
+<h4>Метки</h4>
+    <ul class="tagcloud">
+            <li class="tag-4">
+                <a href="http://fromer.ru/tag/rhel.html">
+                RHEL
+                </a>
+            </li>
+            <li class="tag-4">
+                <a href="http://fromer.ru/tag/python.html">
+                Python
+                </a>
+            </li>
+            <li class="tag-4">
+                <a href="http://fromer.ru/tag/raid.html">
+                Raid
+                </a>
+            </li>
+            <li class="tag-1">
+                <a href="http://fromer.ru/tag/obzor.html">
+                Обзор
+                </a>
+            </li>
+            <li class="tag-4">
+                <a href="http://fromer.ru/tag/linux.html">
+                Linux
+                </a>
+            </li>
+            <li class="tag-4">
+                <a href="http://fromer.ru/tag/vmware.html">
+                Vmware
+                </a>
+            </li>
+            <li class="tag-4">
+                <a href="http://fromer.ru/tag/pm.html">
+                PM
+                </a>
+            </li>
+    </ul>
+
+<nav class="widget">
+  <h4>Social</h4>
+  <ul class="blank">
+    <li><a href="#">You can add links in your config file</a></li>
+    <li><a href="#">Another social link</a></li>
+  </ul>
+</nav>
+
+</div> </div><!-- /.row -->
+
+<p class="paginator">
+    Страница 1 / 1
+</p>
+</section><!-- /#content -->
+
+       </div><!-- /.row -->
+    </div><!-- /.container -->
+
+
+       <div class="container.nopad bg">
+
+    
+        <footer id="credits" class="row">
+          <div class="seven columns left-center">
+
+                   <address id="about" class="vcard body">
+                    Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                    which takes great advantage of <a href="http://python.org">Python</a>.
+                    <br />
+                    Based on the <a target="_blank" href="http://gumbyframework.com">Gumby Framework</a>
+                    </address>
+          </div>
+
+
+          <div class="seven columns">
+            <div class="row">
+              <ul class="socbtns">
+
+                <li><div class="btn primary"><a href="https://github.com/Fr0mer" target="_blank">Github</a></div></li>
+
+                <li><div class="btn twitter"><a href="https://twitter.com/Fr0mer" target="_blank">Twitter</a></div></li>
+
+                <li><div class="btn facebook"><a href="https://www.facebook.com/fr0mer" target="_blank">Facebook</a></div></li>
+
+
+              </ul>
+            </div>
+          </div>
+<!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter39769515 = new Ya.Metrika({ id:39769515, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/39769515" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+        </footer>
+
+    </div>
+
+
+  <script src="http://fromer.ru/theme/js/libs/jquery-1.9.1.min.js"></script>
+  <script src="http://fromer.ru/theme/js/libs/gumby.min.js"></script>
+  <script src="http://fromer.ru/theme/js/plugins.js"></script>
 </body>
 </html>
