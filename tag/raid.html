@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+        <meta charset="utf-8" />
+        <title>My Blog - Raid</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">My Blog </a></h1>
+                <nav><ul>
+                    <li><a href="/pages/about.html">Обо мне</a></li>
+                    <li><a href="/category/adminskoe.html">Админское</a></li>
+                    <li><a href="/category/knigi.html">Книги</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/rhel-5-5-i-fakeraid.html">RHEL 5.5 и fakeRAID</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2012-12-17T12:48:00+04:00">
+                Published: Mon 17 December 2012
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/fr0mer.html">fr0mer</a>
+        </address>
+<p>In <a href="/category/adminskoe.html">Админское</a>.</p>
+<p>tags: <a href="/tag/linux.html">Linux</a> <a href="/tag/raid.html">Raid</a> <a href="/tag/rhel.html">RHEL</a> </p>
+</footer><!-- /.post-info --><p><img alt="Rhel_sketch" src="/images/fakeraid.png">
+ Вдруг кому пригодится. Появилась служебная надобность установить Enterprise RedHat Linux 5.5 на один из серверов. В этот погожий последневесенний денек ничто не предвещало беды, как вдруг…</p>
+<!-- PELICAN_END_SUMMARY -->
+
+<p>Обо всем по порядку. Записав подходящий для архитектуры сервера образ <strong>RHEL 5.5 x86_64</strong>, привычно выставив в BIOS’е загрузку с DVD-ROM, я увидел знакомый до боли интерфейс <a href="http://fedoraproject.org/wiki/Anaconda/ru">Анаконды</a>, не меняющийся даже не знаю сколько лет (внешне он остался на уровне, котором был еще в RedHat 7 в 2003 году ). Быстро пролистав стандартные вопросы инсталлера о языке системы, раскладки и прочего, я застопорился на разметке диска. Дело в том, что я точно знал — в сервере два SATA — диска по 250 Гб. Вместо этого редактор разделов <strong>Disk Druid</strong> показывал мне устройство с очень странным именем <strong><em>dev/mapper/isw_dahgehebjg_Volume0</em></strong> и размером в 250 Гб. Это же ж RAID — подумал я и как ни в чем не бывало продолжил установку, хотя тень сомнения закралась ко мне в душу, уж слишком проста оказалась организация RAID. Запись загрузчика (на всё тот же загадочный диск), сетевые настройки, часовой пояс, пароль root’а, выбор пакетов и, вуаля, сервер перезагружается. Инициализация памяти, сканирование устройств и … Добрый день! <strong>«Error loading operating system».</strong></p>
+<p>Тень сомнения превратилась в чёрную липкую лужу уверенности в том, что все будет не так легко, как думалось. Гугл — наше все, и, вооружившись названием материнской платы, я отправился искать информацию о RAID в интернете. Интернету порадовать меня было нечем: на Intel ICH7 отсутствовал аппаратный RAID, но был так называемый fakeRAID (псевдо-RAID, «полусофтовый»), не поддерживаемый ядром RHEL 5.5 (или CentOS 5.5). Будем делать RAID полностью программный, решил я и устремился. Отключил в BIOS’e формирование рэйда и установка ОС зашла на второй круг. Проклятый Disk Druid по прежнему показывал только одно устройство!</p>
+<p>Чувствуя себя препогано, я обратился с призывом о помощи в пустоту. Пустота ответила мне из чата <a href="http://welinux.ru/">welinux</a> голосом пользователя Settler (отзывчивого и доброго человека, по всей видимости). К тому моменту я возился с сервером 3 час в насквозь продуваемой всеми ветрами из 5 кондиционеров серверной. Направил меня мой спаситель на <a href="http://www.linuxquestions.org/">буржуйский сайт</a> , где предлагалось 2 способа решения данной проблемы:</p>
+<p>-выполнить команду <strong><em>dd if=/dev/zero of=/dev/sda count=64</em></strong>, что стирает первые 64 байта MBR и диск «забывает» о том, что он состоял в славном семействе близняшек RAID. Для моего случая данный рецепт не сработал (всего-то одна перезагрузка и я это выяснил);</p>
+<p>-выполнить команду <strong><em>dmraid -r -E</em></strong>, что «delete all of the raid data from the HDDs» — и это сработало! Я наконец-то увидел оба диска в редакторе дисков и успешно создал программный RAID. Небольшой хинт — в своих советах американцы говорят, что устанавливали «minimal linux» и выполнял данные команды из него, я же просто запустив Анаконду и дойдя до разметки диска, переключался во вторую консоль CTRL+ALT+F2 спокойно и смело вводил их прямо в процессе установки. Зло было побеждено, знамя добра в виде свеженького RHEL было водружено на дымящиеся останки fakeRAID, а я в очередной раз убедился в том, что мануалы следует читать ДО, а никак не ПОСЛЕ. <strong>RTFM</strong>, это экономит нервы.</p>
+<p>P.S. Хочется еще раз поблагодарить пользователя Settler с конференции welinux за неоценимую помощь, оказанную очень кстати.</p>                </article>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
