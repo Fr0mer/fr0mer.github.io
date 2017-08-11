@@ -1,45 +1,116 @@
-<!doctype html>
-<html lang="">	
-<head>
-	<meta charset="utf-8"/>
-	<title>Заметки о виртуализации - Блог начинающего разработчика</title>	
-	<meta name="author" content="Fr0mer">
-	
+﻿<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="ru"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru">
+<!--<![endif]-->
+	<head>
+            <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="Fr0mer">
 
-  <meta name="description" content="Волею случая (а точнее по желанию вышестоящего начальства) перепал нам в отдел кластер виртуализации. Мы конечно же обрадовались, выбросили все свои древние сервера и давай безудержно переносить инфраструктуру на платформу виртуализации, пританцовывая джигу и напевая «Ah, du lieber Augustin…» На самом деле нет — мы неохотно и осторожно — ну и консерваторы же эти сисадмины — стали пробовать что же это за зверь такой — виртуализация в отдельно взятой госконторе. По прошествии двух лет 70% нашей инфраструктуры сервис за сервисом переехали в кластер Vmware Vsphere и «волосы мои стали мягкими и шелковистыми». Хотелось бы поделиться плюсами и минусами виртуализации, ведь мне так не хватало этой статьи, когда я писал отчет по внедрению вышестоящим благодетелям, а кому-то она сохранит время. Можно было бы надеяться, что она подтолкнет к переходу много хороших админов, но давайте будем реалистами — порядок цен для создания безотказного кластера такой, что кому это по карману — у тех он давно есть, остальным же приходится только завидовать.">
+
+        <title>Блог начинающего разработчика - Заметки о виртуализации</title>
+
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fromer.ru/theme/css/style.css">
+
+        <!-- Custom CSS -->
+        	<link rel="stylesheet" href="http://fromer.ru/theme/css/colors/blue.css" id="colors">
+
+        <!-- Code highlight color scheme -->
+            <link href="http://fromer.ru/theme/css/code_blocks/darkly.css" rel="stylesheet">
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
 
 
-	<link rel="stylesheet" href="http://fromer.ru/theme/css/main.css" type="text/css" />
+
+        <meta name="tags" contents="Vmware" />
+
+	                <meta property="og:locale" content="">
+		<meta property="og:site_name" content="Блог начинающего разработчика">
+
+	<meta property="og:type" content="article">
+	<meta property="article:author" content="">
+	<meta property="og:url" content="http://fromer.ru/vsphere.html">
+	<meta property="og:title" content="Заметки о виртуализации">
+	<meta property="og:description" content="">
+	   <meta property="og:image" content="http://fromer.ru/images/guilherme-toti.jpg">
+	<meta property="article:published_time" content="2015-12-12 12:43:00+03:00">
+	</head>
+	<body>
+		<header id="header">
+			<!-- Container -->
+			<div class="container">
+				<!-- Logo / Mobile Menu -->
+				<div class="three columns">
+					<div id="logo">
+						<h1><a href="http://fromer.ru/">Блог начинающего разработчика</a></h1>
+					</div>
+				</div>
+				<!-- Navigation
+				================================================== -->
+				<div class="thirteen columns">
+					
+					<nav id="navigation" class="menu">
+						<ul id="responsive">
+
+							<li><a href="http://fromer.ru/">Home</a></li>
+
+
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- Container / End -->
+		</header>
+		<!-- Header / End -->
 		
+		<div id="content-wrapper">
+			<section id="titlebar">
+				<!-- Container -->
+				<div class="container">
+					<div class="sixteen columns">						
+						<nav id="breadcrumbs">
+							<ul>
+								<li>You are here:</li>
+								<li><a href="http://fromer.ru/">Home</a></li>
+<li><a href="http://fromer.ru/category/Админское">Админское</a></li>
+<li>Заметки о виртуализации</li>
+							</ul>
+						</nav>
+					</div>
 
+				</div>
+				<!-- Container / End -->
+			</section>
 
-</head>
+			<div class="container">
+	<div class="twelve alt columns">
+<article class="post" style="margin: 0; border: 0;">
 	
-<body>
+	<div class="post-format">
+		<div class="circle"><i class="icon-pencil"></i><span></span></div>
+	</div>
 
-    <div class="container">
-	  
-	  <header role="banner">
-	    <div class="feeds">
-	    </div>
-		<a href="http://fromer.ru" class="title">Блог начинающего разработчика</a>
-      </header>
-	
-	  <div class="wrapper">
+	<section class="post-content">
 
-		  <div role="main" class="content">
-	<article class="full">
-		
-		<h1>Заметки о виртуализации</h1>
-		
-<div class="metadata">
-  <time datetime="2015-12-12T12:43:00+03:00" pubdate>Sat 12 December 2015</time>
-    <address class="vcard author">
-      by <a class="url fn" href="http://fromer.ru/author/fr0mer.html">Fr0mer</a>
-    </address>
-  in <a href="http://fromer.ru/category/adminskoe.html">Админское</a>
-<p class="tags">tagged <a href="http://fromer.ru/tag/vmware.html">Vmware</a></p></div>		
+		<header class="meta">
+			<h2><a href="http://fromer.ru/vsphere.html">Заметки о виртуализации</a></h2>
+			<ul>
+				<li>By <a href="http://fromer.ru/author/fr0mer.html">Fr0mer</a></li>
+				<li>Sat 12 December 2015</li>
+			</ul>
+		</header>
+
 		<p><img alt="Vmware Logo" src="http://fromer.ru/images/vmware.png"></p>
 <p>Волею случая (а точнее по желанию вышестоящего начальства) перепал нам в отдел кластер виртуализации. Мы конечно же обрадовались, выбросили все свои древние сервера и давай безудержно переносить инфраструктуру на платформу виртуализации, пританцовывая джигу и напевая «Ah, du lieber Augustin…»
 На самом деле нет — мы неохотно и осторожно — ну и консерваторы же эти сисадмины — стали пробовать что же это за зверь такой — виртуализация в отдельно взятой госконторе. По прошествии двух лет 70% нашей инфраструктуры сервис за сервисом переехали в кластер Vmware Vsphere и «волосы мои стали мягкими и шелковистыми». Хотелось бы поделиться плюсами и минусами виртуализации, ведь мне так не хватало этой статьи, когда я писал отчет по внедрению вышестоящим благодетелям, а кому-то она сохранит время. Можно было бы надеяться, что она подтолкнет к переходу много хороших админов, но давайте будем реалистами — порядок цен для создания безотказного кластера такой, что кому это по карману — у тех он давно есть, остальным же приходится только завидовать.</p>
@@ -60,54 +131,44 @@
 <p>А также <strong>минусы</strong>:</p>
 <p>1.Повышения требований к серверам, как по производительности, так и по надежности.</p>
 <p>2.Возможная единая точка отказа.</p>
-<p><strong><em>Резюме:</em></strong> Виртуализация — отличная штука для продакшн-сервисов, где нужна быстрота деплоя, многочисленные эксперименты и удобство администрирования, однако критичные маломеняющиеся штуки все-таки стоит держать в железе (разумеется, в двойном экземпляре).</p>	
+<p><strong><em>Резюме:</em></strong> Виртуализация — отличная штука для продакшн-сервисов, где нужна быстрота деплоя, многочисленные эксперименты и удобство администрирования, однако критичные маломеняющиеся штуки все-таки стоит держать в железе (разумеется, в двойном экземпляре).</p>
 
-	</article>
+		    <div class="tags">
+		        <p>tags: <a href="http://fromer.ru/tag/vmware.html">Vmware</a></p>
+		    </div>
 
-    <p>
-	<a href="https://twitter.com/share" class="twitter-share-button" data-via="" data-lang="en" data-size="large" data-related="">Tweet</a>
-	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-	</p>
+<div class="sharing">
+</div>
+<hr>
+		
+	</section>
+	<div class="clearfix"></div>
 
-
-		  </div>	
-		  
-		  <div class="sidebar">
-		    <div class="sidebar-container" >
-
-
-  	          <nav>
-	            <h2>Categories</h2>
-	            <ul>
-	                <li class="active"><a href="http://fromer.ru/category/adminskoe.html">Админское</a></li>
-	                <li ><a href="http://fromer.ru/category/knigi.html">Книги</a></li>
-	            </ul>
-	          </nav>
-
-
-	            <aside>
-	              <h2>Blogroll</h2>
-	              <ul>
-	                  <li><a href="http://getpelican.com/">Pelican</a></li>
-	                  <li><a href="http://python.org/">Python.org</a></li>
-	                  <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-	                  <li><a href="#">You can modify those links in your config file</a></li>
-	              </ul>
-	            </aside>
-	        </div>
-		  </div>
-
-	  </div>
-
-      <footer>
-		<p role="contentinfo">
-		  Fr0mer - Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/fle/pelican-sober">pelican-sober</a>.
-    	</p>
-
-	  </footer>	
+</article>
 
 	</div>
-	
 
-</body>
+	<!-- Sidebar -->
+	<div class="four columns">
+
+		
+	</div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Content Wrapper / End -->
+
+
+		<div id="footer-bottom">
+			<!-- Container -->
+			<div class="container">
+				<div class="eight columns">Blog powered by <a href="http://getpelican.com">Pelican</a></div>
+			</div>
+			<!-- Container / End -->
+		</div>
+		<!-- Footer Bottom / End -->
+		
+	<!-- Javascripts -->
+	<script src="http://fromer.ru/theme/js/jquery.min.js"></script>
+	</body>
 </html>
