@@ -1,156 +1,79 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!doctype html>
+<html lang="">	
 <head>
+	<meta charset="utf-8"/>
+	<title>Блог начинающего разработчика</title>	
+	<meta name="author" content="Fr0mer">
+	
 
-        <title>Блог начинающего разработчика</title>
-        <meta charset="utf-8" />
-
-
-        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
-        <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
-
-        <link rel="stylesheet" type="text/css" href="http://fromer.ru/theme/gumby.css" />
-        <link rel="stylesheet" type="text/css" href="http://fromer.ru/theme/style.css" />
-        <link rel="stylesheet" type="text/css" href="http://fromer.ru/theme/pygment.css" />
-
-        <script src="http://fromer.ru/theme/js/libs/modernizr-2.6.2.min.js"></script>
-
-
-
+	<link rel="top" href="#" /><link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic|Source+Code+Pro' rel='stylesheet' type='text/css'></link>
+	<link rel="stylesheet" href="http://fromer.ru/theme/css/main.css" type="text/css" />
+		
 
 </head>
-
-<body id="index" class="home">
-
+	
+<body>
 
     <div class="container">
+	  
+	  <header role="banner">
+	    <div class="feeds">
+	    </div>
+		<a href="http://fromer.ru" class="title">Блог начинающего разработчика</a>
+      </header>
+	
+	  <div class="wrapper">
 
-        <div class="row">
+		  <div role="main" class="content">
 
-          <header id="banner" class="body">
-                  <h1><a href="http://fromer.ru/">Блог начинающего разработчика <strong></strong></a></h1>
-          </header><!-- /#banner -->
-
-            <div id="navigation" class="navbar row">
-              <a href="#" gumby-trigger="#navigation &gt; ul" class="toggle"><i class="icon-menu"></i></a>
-             
-              <ul class="columns">
-                <li><a href="http://fromer.ru/">Блог</a></li>
-
-                <li><a href="http://fromer.ru/pages/about.html">Обо мне</a></li>
-
-              </ul>
-            </div>
-
-<ul>
-<li class="nav-header"><h4><i class="icon-tags icon-large"></i>Метки</h4></li>
-<li class="tag-4">
-	<a href="http://fromer.ru/tag/rhel.html">
-		<i class="icon-tag icon-large"></i>RHEL
-	</a>
-</li>
-<li class="tag-4">
-	<a href="http://fromer.ru/tag/raid.html">
-		<i class="icon-tag icon-large"></i>Raid
-	</a>
-</li>
-<li class="tag-4">
-	<a href="http://fromer.ru/tag/linux.html">
-		<i class="icon-tag icon-large"></i>Linux
-	</a>
-</li>
-<li class="tag-1">
-	<a href="http://fromer.ru/tag/obzor.html">
-		<i class="icon-tag icon-large"></i>Обзор
-	</a>
-</li>
-<li class="tag-4">
-	<a href="http://fromer.ru/tag/vmware.html">
-		<i class="icon-tag icon-large"></i>Vmware
-	</a>
-</li>
-<li class="tag-4">
-	<a href="http://fromer.ru/tag/python.html">
-		<i class="icon-tag icon-large"></i>Python
-	</a>
-</li>
-<li class="tag-4">
-	<a href="http://fromer.ru/tag/pm.html">
-		<i class="icon-tag icon-large"></i>PM
-	</a>
-</li>
+<h1>Tags</h1>
+	
+<ul class="tagcloud">
+    <li class="tag-4"><a href="http://fromer.ru/tag/vmware.html">Vmware</a></li>
+    <li class="tag-4"><a href="http://fromer.ru/tag/linux.html">Linux</a></li>
+    <li class="tag-4"><a href="http://fromer.ru/tag/python.html">Python</a></li>
+    <li class="tag-4"><a href="http://fromer.ru/tag/pm.html">PM</a></li>
+    <li class="tag-4"><a href="http://fromer.ru/tag/raid.html">Raid</a></li>
+    <li class="tag-1"><a href="http://fromer.ru/tag/obzor.html">Обзор</a></li>
+    <li class="tag-4"><a href="http://fromer.ru/tag/rhel.html">RHEL</a></li>
 </ul>
 
-       </div><!-- /.row -->
-    </div><!-- /.container -->
+		  </div>	
+		  
+		  <div class="sidebar">
+
+	        <nav>
+	          <h2>Categories</h2>
+	          <ul>
+	              <li ><a href="http://fromer.ru/category/adminskoe.html">Админское</a></li>
+	              <li ><a href="http://fromer.ru/category/knigi.html">Книги</a></li>
+	          </ul>
+	        </nav>
 
 
-       <div class="container.nopad bg">
+	          <aside>
+	            <h2>Blogroll</h2>
+	            <ul>
+	                <li><a href="http://getpelican.com/">Pelican</a></li>
+	                <li><a href="http://python.org/">Python.org</a></li>
+	                <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+	                <li><a href="#">You can modify those links in your config file</a></li>
+	            </ul>
+	          </aside>
 
-    
-        <footer id="credits" class="row">
-          <div class="seven columns left-center">
+		  </div>
 
-                   <address id="about" class="vcard body">
-                    Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                    which takes great advantage of <a href="http://python.org">Python</a>.
-                    <br />
-                    Based on the <a target="_blank" href="http://gumbyframework.com">Gumby Framework</a>
-                    </address>
-          </div>
+	  </div>
 
+      <footer>
+		<p role="contentinfo">
+		  © 2013 Fr0mer - Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/fle/pelican-simplegrey">pelican-simplegrey</a>.
+    	</p>
 
-          <div class="seven columns">
-            <div class="row">
-              <ul class="socbtns">
+	  </footer>	
 
-                <li><div class="btn primary"><a href="https://github.com/Fr0mer" target="_blank">Github</a></div></li>
+	</div>
+	
 
-                <li><div class="btn twitter"><a href="https://twitter.com/Fr0mer" target="_blank">Twitter</a></div></li>
-
-                <li><div class="btn facebook"><a href="https://www.facebook.com/fr0mer" target="_blank">Facebook</a></div></li>
-
-
-              </ul>
-            </div>
-          </div>
-        </footer>
-
-    </div>
-
-
-  <script src="http://fromer.ru/theme/js/libs/jquery-1.9.1.min.js"></script>
-  <script src="http://fromer.ru/theme/js/libs/gumby.min.js"></script>
-  <script src="http://fromer.ru/theme/js/plugins.js"></script>
- 
-  <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter45584880 = new Ya.Metrika({
-                    id:45584880,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
-                });
-            } catch(e) { }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/45584880" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
 </body>
 </html>
