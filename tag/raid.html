@@ -1,142 +1,191 @@
-﻿﻿<!DOCTYPE html>
-<!--[if IE 8 ]><html class="ie ie8" lang="ru"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
+<!DOCTYPE html>
 <html lang="ru">
-<!--<![endif]-->
-	<head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="author" content="Fr0mer">
+<head>
+
+        <title>Блог начинающего разработчика - Raid</title>
+        <meta charset="utf-8" />
 
 
-        <title>Блог начинающего разработчика - Tag Raid</title>
+        <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+        <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="http://fromer.ru/theme/gumby.css" />
+        <link rel="stylesheet" type="text/css" href="http://fromer.ru/theme/style.css" />
+        <link rel="stylesheet" type="text/css" href="http://fromer.ru/theme/pygment.css" />
+
+        <script src="http://fromer.ru/theme/js/libs/modernizr-2.6.2.min.js"></script>
 
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="http://fromer.ru/theme/css/style.css">
-
-        <!-- Custom CSS -->
-        	<link rel="stylesheet" href="http://fromer.ru/theme/css/colors/blue.css" id="colors">
-
-        <!-- Code highlight color scheme -->
-            <link href="http://fromer.ru/theme/css/code_blocks/darkly.css" rel="stylesheet">
 
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+</head>
 
-                <meta property="og:locale" content="">
-		<meta property="og:site_name" content="Блог начинающего разработчика">
-	</head>
-	<body>
-		<header id="header">
-			<!-- Container -->
-			<div class="container">
-				<!-- Logo / Mobile Menu -->
-				<div class="three columns">
-					<div id="logo">
-						<h1><a href="http://fromer.ru/">Блог начинающего разработчика</a></h1>
-					</div>
-				</div>
-				<!-- Navigation
-				================================================== -->
-				<div class="thirteen columns">
-					
-					<nav id="navigation" class="menu">
-						<ul id="responsive">
-
-							<li><a href="http://fromer.ru/">Home</a></li>
+<body id="index" class="home">
 
 
-						</ul>
-					</nav>
-				</div>
-			</div>
-			<!-- Container / End -->
-		</header>
-		<!-- Header / End -->
-		
-		<div id="content-wrapper">
-			<section id="titlebar">
-				<!-- Container -->
-				<div class="container">
-					<div class="sixteen columns">						
-						<nav id="breadcrumbs">
-							<ul>
-								<li>You are here:</li>
-								<li><a href="http://fromer.ru/">Home</a></li>
-<li><a href="http://fromer.ru/tags">Tags</a></li>
-<li>Raid</li>
-							</ul>
-						</nav>
-					</div>
+    <div class="container">
 
-				</div>
-				<!-- Container / End -->
-			</section>
+        <div class="row">
 
-			<div class="container">
-	<div class="twelve alt columns">
-		<!-- Post -->
-		<article class="post medium">
-			<div class="twelve columns">
-				<section class="post-content">
-					<header class="meta">
-						<h2><a href="http://fromer.ru/rhel-5-5-i-fakeraid.html" rel="bookmark" title="Permalink to RHEL 5.5 и fakeRAID">RHEL 5.5 и fakeRAID</a></h2>
-						<ul>
-							<li>By <a href="http://fromer.ru/author/fr0mer.html">fr0mer</a></li>
-							<li>Mon 17 December 2012</li>
-							<li><a href="http://fromer.ru/category/Админское">Админское</a></li>
-						</ul>
-					</header>
-					<p>
-							<p><img alt="Rhel_sketch" src="http://fromer.ru/images/fakeraid.png">
+          <header id="banner" class="body">
+                  <h1><a href="http://fromer.ru/">Блог начинающего разработчика <strong></strong></a></h1>
+          </header><!-- /#banner -->
+
+            <div id="navigation" class="navbar row">
+              <a href="#" gumby-trigger="#navigation &gt; ul" class="toggle"><i class="icon-menu"></i></a>
+             
+              <ul class="columns">
+                <li><a href="http://fromer.ru/">Блог</a></li>
+
+                <li><a href="http://fromer.ru/pages/about.html">Обо мне</a></li>
+
+              </ul>
+            </div>
+
+<section id="content">
+
+
+
+   <div class="row">
+
+
+        <div class="eleven columns">
+                 <ol id="post-list">
+                        <li><article class="hentry">
+                                <header> <h2 class="entry-title"><a href="http://fromer.ru/rhel-5-5-i-fakeraid.html" rel="bookmark" title="Permalink to RHEL 5.5 и fakeRAID">RHEL 5.5 и fakeRAID</a></h2> </header>
+                                <footer class="post-info">
+                                    <abbr class="published" title="2012-12-17T12:48:00+04:00"> Mon 17 December 2012 </abbr>
+                                    <address class="vcard author">By 
+                                    <a class="url fn" href="http://fromer.ru/author/fr0mer.html"> fr0mer</a>
+                                    </address>
+                                </footer><!-- /.post-info -->
+                                <div class="entry-content"> <p><img alt="Rhel_sketch" src="http://fromer.ru/images/fakeraid.png">
  Вдруг кому пригодится. Появилась служебная надобность установить Enterprise RedHat Linux 5.5 на один из серверов. В этот погожий последневесенний денек ничто не предвещало беды, как вдруг…</p>
+ </div><!-- /.entry-content -->
 
-	        		</p>
-					<a href="http://fromer.ru/rhel-5-5-i-fakeraid.html" class="button color">Read More</a>
-				</section>
-			</div>
-			<div class="clearfix"></div>
-		</article>
-
-	<!-- Pagination -->
-	<nav class="pagination">
-		<ul>
-			<li>
-			</li>
-			<!-- Page 1 / 1 -->
-		</ul>
-		<div class="clearfix"></div>
-	</nav>
-	</div>
-
-	<!-- Sidebar -->
-	<div class="four columns">
-
-		
-	</div>
-			</div>
-			<!-- Container / End -->
-		</div>
-		<!-- Content Wrapper / End -->
+                                <div class="medium primary btn"><a href="http://fromer.ru/rhel-5-5-i-fakeraid.html" rel="bookmark" title="Permalink to RHEL 5.5 и fakeRAID">Read more <i class="icon-arrow-right"></i></a></div>
 
 
-		<div id="footer-bottom">
-			<!-- Container -->
-			<div class="container">
-				<div class="eight columns">Blog powered by <a href="http://getpelican.com">Pelican</a></div>
-			</div>
-			<!-- Container / End -->
-		</div>
-		<!-- Footer Bottom / End -->
-		
-	<!-- Javascripts -->
-	<script src="http://fromer.ru/theme/js/jquery.min.js"></script>
-	</body>
+
+                                <div class="row tag-row">
+                                        <span>Tagged as : </span>
+                                            <a class="danger label" href="http://fromer.ru/tag/linux.html">Linux</a>
+                                            <a class="danger label" href="http://fromer.ru/tag/raid.html">Raid</a>
+                                            <a class="danger label" href="http://fromer.ru/tag/rhel.html">RHEL</a>
+                                </div>
+
+
+
+                        </article></li>
+                </ol><!-- /#posts-list -->
+
+        </div><!-- /.eleven.columns -->
+        
+<div class="three columns">
+
+<h4>Страницы</h4>
+
+ <ul>
+      <li><a href="http://fromer.ru/pages/about.html">Обо мне</a></li>
+  </ul>
+
+<h4>Категории</h4>
+<ul class="blank">
+		<li><a href="http://fromer.ru/category/adminskoe.html">Админское</a></li>
+		<li><a href="http://fromer.ru/category/knigi.html">Книги</a></li>
+</ul>
+
+
+<h4>Метки</h4>
+	<ul class="blank">
+	    <li class="tag-4"><a href="http://fromer.ru/tag/rhel.html">RHEL</a></li>
+	    <li class="tag-1"><a href="http://fromer.ru/tag/obzor.html">Обзор</a></li>
+	    <li class="tag-4"><a href="http://fromer.ru/tag/python.html">Python</a></li>
+	    <li class="tag-4"><a href="http://fromer.ru/tag/linux.html">Linux</a></li>
+	    <li class="tag-4"><a href="http://fromer.ru/tag/pm.html">PM</a></li>
+	    <li class="tag-4"><a href="http://fromer.ru/tag/vmware.html">Vmware</a></li>
+	    <li class="tag-4"><a href="http://fromer.ru/tag/raid.html">Raid</a></li>
+</ul>
+
+
+
+</div> </div><!-- /.row -->
+
+<p class="paginator">
+    Page 1 / 1
+</p>
+</section><!-- /#content -->
+
+       </div><!-- /.row -->
+    </div><!-- /.container -->
+
+
+       <div class="container.nopad bg">
+
+    
+        <footer id="credits" class="row">
+          <div class="seven columns left-center">
+
+                   <address id="about" class="vcard body">
+                    Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                    which takes great advantage of <a href="http://python.org">Python</a>.
+                    <br />
+                    Based on the <a target="_blank" href="http://gumbyframework.com">Gumby Framework</a>
+                    </address>
+          </div>
+
+
+          <div class="seven columns">
+            <div class="row">
+              <ul class="socbtns">
+
+                <li><div class="btn primary"><a href="https://github.com/Fr0mer" target="_blank">Github</a></div></li>
+
+                <li><div class="btn twitter"><a href="https://twitter.com/Fr0mer" target="_blank">Twitter</a></div></li>
+
+                <li><div class="btn facebook"><a href="https://www.facebook.com/fr0mer" target="_blank">Facebook</a></div></li>
+
+
+              </ul>
+            </div>
+          </div>
+        </footer>
+
+    </div>
+
+
+  <script src="http://fromer.ru/theme/js/libs/jquery-1.9.1.min.js"></script>
+  <script src="http://fromer.ru/theme/js/libs/gumby.min.js"></script>
+  <script src="http://fromer.ru/theme/js/plugins.js"></script>
+ 
+  <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter45584880 = new Ya.Metrika({
+                    id:45584880,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/45584880" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</body>
 </html>
