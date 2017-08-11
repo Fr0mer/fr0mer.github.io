@@ -1,40 +1,46 @@
-<!DOCTYPE html>
-<html lang="ru">
+<!doctype html>
+<html lang="">	
 <head>
-          <title>Блог начинающего разработчика</title>
-        <meta charset="utf-8" />
+	<meta charset="utf-8"/>
+	<title>RHEL 5.5 и fakeRAID - Блог начинающего разработчика</title>	
+	<meta name="author" content="Fr0mer">
+	
+
+  <meta name="description" content="Вдруг кому пригодится. Появилась служебная надобность установить Enterprise RedHat Linux 5.5 на один из серверов. В этот погожий последневесенний денек ничто не предвещало беды, как вдруг…">
 
 
-    <meta name="tags" content="Linux" />
-    <meta name="tags" content="Raid" />
-    <meta name="tags" content="RHEL" />
+
+	<link rel="stylesheet" href="http://fromer.ru/theme/css/main.css" type="text/css" />
+		
+
 
 </head>
+	
+<body>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="http://fromer.ru/">Блог начинающего разработчика <strong></strong></a></h1>
-        </header><!-- /#banner -->
-        <nav id="menu"><ul>
-            <li><a href="http://fromer.ru/pages/about.html">Обо мне</a></li>
-        </ul></nav><!-- /#menu -->
-<section id="content" class="body">
-  <header>
-    <h2 class="entry-title">
-      <a href="http://fromer.ru/rhel-5-5-i-fakeraid.html" rel="bookmark"
-         title="Permalink to RHEL 5.5 и fakeRAID">RHEL 5.5 и fakeRAID</a></h2>
- 
-  </header>
-  <footer class="post-info">
-    <time class="published" datetime="2012-12-17T12:48:00+04:00">
-      Mon 17 December 2012
-    </time>
+    <div class="container">
+	  
+	  <header role="banner">
+	    <div class="feeds">
+	    </div>
+		<a href="http://fromer.ru" class="title">Блог начинающего разработчика</a>
+      </header>
+	
+	  <div class="wrapper">
+
+		  <div role="main" class="content">
+	<article class="full">
+		
+		<h1>RHEL 5.5 и fakeRAID</h1>
+		
+<div class="metadata">
+  <time datetime="2012-12-17T12:48:00+04:00" pubdate>Mon 17 December 2012</time>
     <address class="vcard author">
-      By           <a class="url fn" href="http://fromer.ru/author/fr0mer.html">fr0mer</a>
+      by <a class="url fn" href="http://fromer.ru/author/fr0mer.html">fr0mer</a>
     </address>
-  </footer><!-- /.post-info -->
-  <div class="entry-content">
-    <p><img alt="Rhel_sketch" src="http://fromer.ru/images/fakeraid.png">
+  in <a href="http://fromer.ru/category/adminskoe.html">Админское</a>
+<p class="tags">tagged <a href="http://fromer.ru/tag/linux.html">Linux</a>, <a href="http://fromer.ru/tag/raid.html">Raid</a>, <a href="http://fromer.ru/tag/rhel.html">RHEL</a></p></div>		
+		<p><img alt="Rhel_sketch" src="http://fromer.ru/images/fakeraid.png">
  Вдруг кому пригодится. Появилась служебная надобность установить Enterprise RedHat Linux 5.5 на один из серверов. В этот погожий последневесенний денек ничто не предвещало беды, как вдруг…</p>
 
 
@@ -43,14 +49,54 @@
 <p>Чувствуя себя препогано, я обратился с призывом о помощи в пустоту. Пустота ответила мне из чата <a href="http://welinux.ru/">welinux</a> голосом пользователя Settler (отзывчивого и доброго человека, по всей видимости). К тому моменту я возился с сервером 3 час в насквозь продуваемой всеми ветрами из 5 кондиционеров серверной. Направил меня мой спаситель на <a href="http://www.linuxquestions.org/">буржуйский сайт</a> , где предлагалось 2 способа решения данной проблемы:</p>
 <p>-выполнить команду <strong><em>dd if=/dev/zero of=/dev/sda count=64</em></strong>, что стирает первые 64 байта MBR и диск «забывает» о том, что он состоял в славном семействе близняшек RAID. Для моего случая данный рецепт не сработал (всего-то одна перезагрузка и я это выяснил);</p>
 <p>-выполнить команду <strong><em>dmraid -r -E</em></strong>, что «delete all of the raid data from the HDDs» — и это сработало! Я наконец-то увидел оба диска в редакторе дисков и успешно создал программный RAID. Небольшой хинт — в своих советах американцы говорят, что устанавливали «minimal linux» и выполнял данные команды из него, я же просто запустив Анаконду и дойдя до разметки диска, переключался во вторую консоль CTRL+ALT+F2 спокойно и смело вводил их прямо в процессе установки. Зло было побеждено, знамя добра в виде свеженького RHEL было водружено на дымящиеся останки fakeRAID, а я в очередной раз убедился в том, что мануалы следует читать ДО, а никак не ПОСЛЕ. <strong>RTFM</strong>, это экономит нервы.</p>
-<p>P.S. Хочется еще раз поблагодарить пользователя Settler с конференции welinux за неоценимую помощь, оказанную очень кстати.</p>
-  </div><!-- /.entry-content -->
-</section>
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
+<p>P.S. Хочется еще раз поблагодарить пользователя Settler с конференции welinux за неоценимую помощь, оказанную очень кстати.</p>	
+
+	</article>
+
+    <p>
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="" data-lang="en" data-size="large" data-related="">Tweet</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</p>
+
+
+		  </div>	
+		  
+		  <div class="sidebar">
+		    <div class="sidebar-container" >
+
+
+  	          <nav>
+	            <h2>Categories</h2>
+	            <ul>
+	                <li class="active"><a href="http://fromer.ru/category/adminskoe.html">Админское</a></li>
+	                <li ><a href="http://fromer.ru/category/knigi.html">Книги</a></li>
+	            </ul>
+	          </nav>
+
+
+	            <aside>
+	              <h2>Blogroll</h2>
+	              <ul>
+	                  <li><a href="http://getpelican.com/">Pelican</a></li>
+	                  <li><a href="http://python.org/">Python.org</a></li>
+	                  <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+	                  <li><a href="#">You can modify those links in your config file</a></li>
+	              </ul>
+	            </aside>
+	        </div>
+		  </div>
+
+	  </div>
+
+      <footer>
+		<p role="contentinfo">
+		  Fr0mer - Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/fle/pelican-sober">pelican-sober</a>.
+    	</p>
+
+	  </footer>	
+
+	</div>
+	
+
 </body>
 </html>
