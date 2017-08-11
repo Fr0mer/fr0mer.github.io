@@ -1658,8 +1658,8 @@ img {
   background: #313436;
 }
 .btn.danger, .skiplink.danger {
-  background: #ca3838;
-  border: 1px solid #ca3838;
+  background: #3b5998;
+  border: 1px solid #3b5998;
 }
 .btn.danger:hover, .skiplink.danger:hover {
   background: #d56060;
@@ -5113,14 +5113,14 @@ form fieldset legend {
   top: 5px;
   right: 15px;
   z-index: 999;
-  color: #ca3838;
+  color: #3b5998;
 }
 .field.danger.append:after, .field.danger.prepend:after {
   content: "";
 }
 .field.danger input, .field.danger .input, .field.danger textarea, .field.danger .textarea, .field.danger .radio span, .field.danger .checkbox span, .field.danger .picker {
-  border-color: #ca3838;
-  color: #ca3838;
+  border-color: #3b5998;
+  color: #3b5998;
   background: #f0c5c5;
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
@@ -5128,13 +5128,13 @@ form fieldset legend {
   transition-duration: 0.2s;
 }
 .field.danger textarea {
-  color: #ca3838;
+  color: #3b5998;
 }
 .field.danger input::-webkit-input-placeholder, .field.danger textarea::-webkit-input-placeholder {
-  color: #ca3838;
+  color: #3b5998;
 }
 .field.danger input:-moz-placeholder, .field.danger textarea:-moz-placeholder {
-  color: #ca3838;
+  color: #3b5998;
 }
 .field.warning:after {
   font-family: "entypo";
@@ -5199,8 +5199,8 @@ form fieldset legend {
   color: #58c026;
 }
 .field .picker.danger {
-  border-color: #ca3838;
-  color: #ca3838;
+  border-color: #3b5998;
+  color: #3b5998;
   background: #f0c5c5;
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
@@ -5208,7 +5208,7 @@ form fieldset legend {
   transition-duration: 0.2s;
 }
 .field .picker.danger select, .field .picker.danger:after {
-  color: #ca3838;
+  color: #3b5998;
 }
 .field .picker.warning {
   border-color: #f6b83f;
@@ -5235,11 +5235,11 @@ form fieldset legend {
   color: #58c026;
 }
 .field .radio.danger, .field .checkbox.danger {
-  color: #ca3838;
+  color: #3b5998;
 }
 .field .radio.danger span, .field .checkbox.danger span {
-  border-color: #ca3838;
-  color: #ca3838;
+  border-color: #3b5998;
+  color: #3b5998;
   background: #f0c5c5;
   -webkit-transition-duration: 0.2s;
   -moz-transition-duration: 0.2s;
@@ -5429,7 +5429,7 @@ form fieldset legend {
   background: #212121;
 }
 .badge.danger, .label.danger {
-  background: #ca3838;
+  background: #3b5998;
 }
 .badge.light, .label.light {
   background: #fff;
@@ -5565,7 +5565,7 @@ form fieldset legend {
 }
 .alert.danger {
   background: #df8989;
-  border: 1px solid #ca3838;
+  border: 1px solid #3b5998;
   color: #7b2121;
 }
 .alert.warning {
