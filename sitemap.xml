@@ -4,133 +4,133 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>http://fromer.ru/</loc>
-<lastmod>2018-04-04T11:25:44-00:00</lastmod>
+<loc>http://shilow.ru/</loc>
+<lastmod>2018-04-04T11:27:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://fromer.ru/archives.html</loc>
-<lastmod>2018-04-04T11:25:44-00:00</lastmod>
+<loc>http://shilow.ru/archives.html</loc>
+<lastmod>2018-04-04T11:27:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://fromer.ru/tags.html</loc>
-<lastmod>2018-04-04T11:25:44-00:00</lastmod>
+<loc>http://shilow.ru/tags.html</loc>
+<lastmod>2018-04-04T11:27:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://fromer.ru/categories.html</loc>
-<lastmod>2018-04-04T11:25:44-00:00</lastmod>
+<loc>http://shilow.ru/categories.html</loc>
+<lastmod>2018-04-04T11:27:11-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://fromer.ru/pages/about.html</loc>
+<loc>http://shilow.ru/pages/about.html</loc>
 <lastmod>2016-01-26T10:11:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://fromer.ru/a-byte-of-python.html</loc>
+<loc>http://shilow.ru/a-byte-of-python.html</loc>
 <lastmod>2016-04-21T13:49:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://fromer.ru/vsphere.html</loc>
+<loc>http://shilow.ru/vsphere.html</loc>
 <lastmod>2015-12-12T12:43:00+03:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://fromer.ru/deadline.html</loc>
+<loc>http://shilow.ru/deadline.html</loc>
 <lastmod>2013-07-26T09:26:00+04:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://fromer.ru/rhel-5-5-i-fakeraid.html</loc>
+<loc>http://shilow.ru/rhel-5-5-i-fakeraid.html</loc>
 <lastmod>2012-12-17T12:48:00+04:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://fromer.ru/category/adminskoe.html</loc>
+<loc>http://shilow.ru/category/adminskoe.html</loc>
 <lastmod>2015-12-12T12:43:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://fromer.ru/category/knigi.html</loc>
+<loc>http://shilow.ru/category/knigi.html</loc>
 <lastmod>2016-04-21T13:49:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://fromer.ru/tag/raid.html</loc>
+<loc>http://shilow.ru/tag/raid.html</loc>
 <lastmod>2012-12-17T12:48:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://fromer.ru/tag/python.html</loc>
+<loc>http://shilow.ru/tag/python.html</loc>
 <lastmod>2016-04-21T13:49:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://fromer.ru/tag/obzor.html</loc>
+<loc>http://shilow.ru/tag/obzor.html</loc>
 <lastmod>2016-04-21T13:49:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://fromer.ru/tag/rhel.html</loc>
+<loc>http://shilow.ru/tag/rhel.html</loc>
 <lastmod>2012-12-17T12:48:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://fromer.ru/tag/linux.html</loc>
+<loc>http://shilow.ru/tag/linux.html</loc>
 <lastmod>2012-12-17T12:48:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://fromer.ru/tag/vmware.html</loc>
+<loc>http://shilow.ru/tag/vmware.html</loc>
 <lastmod>2015-12-12T12:43:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://fromer.ru/tag/pm.html</loc>
+<loc>http://shilow.ru/tag/pm.html</loc>
 <lastmod>2013-07-26T09:26:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://fromer.ru/author/fr0mer.html</loc>
+<loc>http://shilow.ru/author/fr0mer.html</loc>
 <lastmod>2016-04-21T13:49:00+02:30</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
