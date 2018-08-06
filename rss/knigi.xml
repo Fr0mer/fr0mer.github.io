@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Блог разработчика - Книги</title><link>http://shilow.ru/</link><description></description><lastBuildDate>Thu, 21 Apr 2016 13:49:00 +0300</lastBuildDate><item><title>Краткий отзыв о книге A Byte of Python</title><link>http://shilow.ru/a-byte-of-python.html</link><description>&lt;p&gt;В связи с профессиональной переподготовкой прочел книгу «A Byte of Python». Новичкам часто советуют начинать с нее в ответ на вопрос «Как изучать Python?». Книга неплоха, и я решил написать на нее небольшой обзор.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Swaroop Chitlur" src="http://shilow.ru/images/swaroop.png" style="float:left; margin: 10px 10px"&gt;
+Автор книги - &lt;a href="http://www.swaroopch.com/"&gt;Swaroop Chitlur&lt;/a&gt;, блогер, автор книг, программист из Индии, работал в Yahoo!, в Adobe входил в команду продукта Flex . В данный момент трудится  на фирму в Сан-Франциско, занимающейся автомобильным адаптером-диагностом-трекером. Он написал еще "A Byte of VIM" (техническому писателю фантазия, видимо, не очень нужна), книгу об редакторе Vim версии 7.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Fr0mer</dc:creator><pubDate>Thu, 21 Apr 2016 13:49:00 +0300</pubDate><guid isPermaLink="false">tag:shilow.ru,2016-04-21:/a-byte-of-python.html</guid><category>Python</category><category>Обзор</category></item><item><title>Deadline. Роман об управлении проектами</title><link>http://shilow.ru/deadline.html</link><description>&lt;p&gt;&lt;img alt="deadline" src="http://shilow.ru/images/deadline.png"&gt;&lt;/p&gt;
+«…— Мы будем разбирать диаграммы Ганта, — говорил Кэлбфасс. —
+ПЕРТ-диаграммы, отчеты о состоянии дел в компании, взаимодействия с
+отделом по работе с персоналом, проведение еженедельных собраний,
+эффективное использование электронной почты, отчеты о затраченном
+времени, отчеты о темпах работы над проектом, отчеты о поэтапном
+выполнении проекта, и наконец — самое интересное — мы будем
+обсуждать программу по поддержанию качества продукции. У вас,
+кажется, есть вопрос?
+ Мистер Томпкинс поднялся со своего места в последнем ряду.
+ — Да. Меня зовут Томпкинс. Я хотел бы узнать: это что, все? Вы
+  зачитали нам весь план семинара?
+ — Разумеется, — уверенно ответил Кэлбфасс.
+ — Весь план семинара по руководству проектами?
+ — Ну да. Хм, а вам кажется, что я что-то упустил из вида?— Ничего
+  особенного. Вы просто упустили из вида людей.
+ — Людей?
+ — Людей. Проекты делают как раз они.»
+&lt;/pre&gt;
+
+
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Fr0mer</dc:creator><pubDate>Fri, 26 Jul 2013 09:26:00 +0400</pubDate><guid isPermaLink="false">tag:shilow.ru,2013-07-26:/deadline.html</guid><category>PM</category><category>Обзор</category></item></channel></rss>

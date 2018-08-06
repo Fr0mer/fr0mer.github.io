@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"><channel><title>Блог разработчика</title><link>http://shilow.ru/</link><description></description><lastBuildDate>Thu, 21 Apr 2016 13:49:00 +0300</lastBuildDate><item><title>Краткий отзыв о книге A Byte of Python</title><link>http://shilow.ru/a-byte-of-python.html</link><description>&lt;p&gt;В связи с профессиональной переподготовкой прочел книгу «A Byte of Python». Новичкам часто советуют начинать с нее в ответ на вопрос «Как изучать Python?». Книга неплоха, и я решил написать на нее небольшой обзор.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Swaroop Chitlur" src="http://shilow.ru/images/swaroop.png" style="float:left; margin: 10px 10px"&gt;
+Автор книги - &lt;a href="http://www.swaroopch.com/"&gt;Swaroop Chitlur&lt;/a&gt;, блогер, автор книг, программист из Индии, работал в Yahoo!, в Adobe входил в команду продукта Flex . В данный момент трудится  на фирму в Сан-Франциско, занимающейся автомобильным адаптером-диагностом-трекером. Он написал еще "A Byte of VIM" (техническому писателю фантазия, видимо, не очень нужна), книгу об редакторе Vim версии 7.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Fr0mer</dc:creator><pubDate>Thu, 21 Apr 2016 13:49:00 +0300</pubDate><guid isPermaLink="false">tag:shilow.ru,2016-04-21:/a-byte-of-python.html</guid><category>Python</category><category>Обзор</category></item><item><title>Заметки о виртуализации</title><link>http://shilow.ru/vsphere.html</link><description>&lt;p&gt;&lt;img alt="Vmware Logo" src="http://shilow.ru/images/vmware.png"&gt;&lt;/p&gt;
+&lt;p&gt;Волею случая (а точнее по желанию вышестоящего начальства) перепал нам в отдел кластер виртуализации. Мы конечно же обрадовались, выбросили все свои древние сервера и давай безудержно переносить инфраструктуру на платформу виртуализации, пританцовывая джигу и напевая «Ah, du lieber Augustin…»
+На самом деле нет — мы неохотно и осторожно — ну и консерваторы же эти сисадмины — стали пробовать что же это за зверь такой — виртуализация в отдельно взятой госконторе. По прошествии двух лет 70% нашей инфраструктуры сервис за сервисом переехали в кластер Vmware Vsphere и «волосы мои стали мягкими и шелковистыми». Хотелось бы поделиться плюсами и минусами виртуализации, ведь мне так не хватало этой статьи, когда я писал отчет по внедрению вышестоящим благодетелям, а кому-то она сохранит время. Можно было бы надеяться, что она подтолкнет к переходу много хороших админов, но давайте будем реалистами — порядок цен для создания безотказного кластера такой, что кому это по карману — у тех он давно есть, остальным же приходится только завидовать.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Fr0mer</dc:creator><pubDate>Sat, 12 Dec 2015 12:43:00 +0300</pubDate><guid isPermaLink="false">tag:shilow.ru,2015-12-12:/vsphere.html</guid><category>Vmware</category></item><item><title>Deadline. Роман об управлении проектами</title><link>http://shilow.ru/deadline.html</link><description>&lt;p&gt;&lt;img alt="deadline" src="http://shilow.ru/images/deadline.png"&gt;&lt;/p&gt;
+«…— Мы будем разбирать диаграммы Ганта, — говорил Кэлбфасс. —
+ПЕРТ-диаграммы, отчеты о состоянии дел в компании, взаимодействия с
+отделом по работе с персоналом, проведение еженедельных собраний,
+эффективное использование электронной почты, отчеты о затраченном
+времени, отчеты о темпах работы над проектом, отчеты о поэтапном
+выполнении проекта, и наконец — самое интересное — мы будем
+обсуждать программу по поддержанию качества продукции. У вас,
+кажется, есть вопрос?
+ Мистер Томпкинс поднялся со своего места в последнем ряду.
+ — Да. Меня зовут Томпкинс. Я хотел бы узнать: это что, все? Вы
+  зачитали нам весь план семинара?
+ — Разумеется, — уверенно ответил Кэлбфасс.
+ — Весь план семинара по руководству проектами?
+ — Ну да. Хм, а вам кажется, что я что-то упустил из вида?— Ничего
+  особенного. Вы просто упустили из вида людей.
+ — Людей?
+ — Людей. Проекты делают как раз они.»
+&lt;/pre&gt;
+
+
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Fr0mer</dc:creator><pubDate>Fri, 26 Jul 2013 09:26:00 +0400</pubDate><guid isPermaLink="false">tag:shilow.ru,2013-07-26:/deadline.html</guid><category>PM</category><category>Обзор</category></item><item><title>RHEL 5.5 и fakeRAID</title><link>http://shilow.ru/rhel-5-5-i-fakeraid.html</link><description>&lt;p&gt;&lt;img alt="Rhel_sketch" src="http://shilow.ru/images/fakeraid.png"&gt;
+ Вдруг кому пригодится. Появилась служебная надобность установить Enterprise RedHat Linux 5.5 на один из серверов. В этот погожий последневесенний денек ничто не предвещало беды, как вдруг…&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">fr0mer</dc:creator><pubDate>Mon, 17 Dec 2012 12:48:00 +0400</pubDate><guid isPermaLink="false">tag:shilow.ru,2012-12-17:/rhel-5-5-i-fakeraid.html</guid><category>Linux</category><category>Raid</category><category>RHEL</category></item></channel></rss>
